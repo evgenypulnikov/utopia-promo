@@ -47,10 +47,12 @@ function currentSlide(n) {
 
 sliderPrevBtn.addEventListener('click', function() {
   plusSlides(-1);
+  makeTimer();
 });
 
 sliderNextBtn.addEventListener('click', function() {
   plusSlides(1);
+  makeTimer();
 });
 
 sliderDotsWrapper.addEventListener('click', function(evt) {
