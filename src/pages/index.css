@@ -75,7 +75,7 @@
 
 .slider__dots {
   position: absolute;
-  top: 0;
+  bottom: 0;
   display: flex;
   column-gap: 10px;
   margin: 0;
@@ -101,7 +101,7 @@
 
 .slider__nav {
   position: fixed;
-  top: 5px;
+  bottom: 20px;
   left: 10px;
   display: flex;
 }
