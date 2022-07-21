@@ -43,7 +43,7 @@
 
   &__btn {
     position: absolute;
-    bottom: 75px;
+    bottom: 95px;
     padding: 20px 40px;
     border-radius: 5px;
     z-index: 1;
@@ -51,17 +51,21 @@
     vertical-align: middle;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: lowercase;
-    color: #000;
+    color: #fff;
     background-color: #8F00FF;
+    background-image: linear-gradient(to left, #00FFA3 0%, #8F00FF 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
     box-shadow: 50px -20px 200px 15px #8F00FF;
-    transition: background-color 0.5s ease, box-shadow 0.3s ease-in-out;
+    transition: background-position 0.4s ease, background-color 0.5s ease, box-shadow 0.3s ease-in-out;
     letter-spacing: 0.9px;
+    opacity: 0.9;
 
     &:hover {
-      background-color: #00eeb0;
-      box-shadow: -50px 20px 120px 10px #00eeb0;
+      background-position: left bottom;
+      box-shadow: -50px 20px 120px 10px #00FFA3;
     }
   }
 }
