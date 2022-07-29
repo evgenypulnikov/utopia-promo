@@ -3,7 +3,9 @@ const cssnano = require('cssnano');
 
 module.exports = {
   plugins: [
-    autoprefixer,
+    autoprefixer({
+      grid: 'autoplace'
+    }),
     cssnano({ preset: 'default' })
   ]
 };
